@@ -51,12 +51,14 @@ body {
     top: 39%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .heading-primary {
     color: #fff;
     text-transform: uppercase;
     backface-visibility: hidden;
+    margin-bottom: 20px;
 }
 
 .heading-primary-main {
@@ -64,7 +66,6 @@ body {
     font-size: 80px;
     font-weight: 400;
     letter-spacing: 35px;
-    height: 120px;
 
     animation-name: moveInLeft;
     animation-duration: 2s;
@@ -88,17 +89,15 @@ body {
     0% {
         opacity: 0;
         transform: translate(-200px);
-        letter-spacing: 25px;
     }
 
     80% {
-        /* transform: translate(6px); */
+        transform: translate(6px);
     }
 
     100% {
         opacity: 1;
         transform: translate(0px);
-        letter-spacing: 35px;
     }
 }
 
@@ -106,16 +105,79 @@ body {
     0% {
         opacity: 0;
         transform: translate(200px);
-        letter-spacing: 10px;
     }
 
     80% {
-        /* transform: translate(-6px); */
+        transform: translate(-6px);
     }
 
     100% {
         opacity: 1;
         transform: translate(0px);
-        letter-spacing: 14.8px;
     }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2)
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+    border-radius: 100px;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.mfbt-animated {
+    animation: moveInBottom .8s ease .75s;
+    animation-fill-mode: backwards;
 }
