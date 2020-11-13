@@ -1,25 +1,20 @@
-/*
-COLORS:
-
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
-
-*/
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-family: 'Lato', sans-serif;
     line-height: 1.7;
     font-weight: 400;
     color: #777;
-    padding: 30px;
+    padding: 3rem;
 }
 
 .header {
@@ -38,12 +33,12 @@ body {
 
 .logo-box {
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 4rem;
+    left: 4rem;
 }
 
 .logo {
-    height: 35px;
+    height: 3.5rem;
 }
 
 .text-box {
@@ -58,14 +53,14 @@ body {
     color: #fff;
     text-transform: uppercase;
     backface-visibility: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .heading-primary-main {
     display: block;
-    font-size: 80px;
+    font-size: 8rem;
     font-weight: 400;
-    letter-spacing: 35px;
+    letter-spacing: 3.5rem;
 
     animation-name: moveInLeft;
     animation-duration: 2s;
@@ -74,9 +69,9 @@ body {
 
 .heading-primary-sub {
     display: block;
-    font-size: 25px;
+    font-size: 2.5rem;
     font-weight: 700;
-    letter-spacing: 14.8px;
+    letter-spacing: 1.48rem;
 
     animation-name: moveInRight;
     animation-duration: 2s;
@@ -88,7 +83,7 @@ body {
 @keyframes moveInLeft {
     0% {
         opacity: 0;
-        transform: translate(-200px);
+        transform: translate(-20rem);
     }
 
     80% {
@@ -104,7 +99,7 @@ body {
 @keyframes moveInRight {
     0% {
         opacity: 0;
-        transform: translate(200px);
+        transform: translate(20rem);
     }
 
     80% {
@@ -120,7 +115,7 @@ body {
 @keyframes moveInBottom {
     0% {
         opacity: 0;
-        transform: translateY(50px);
+        transform: translateY(5rem);
     }
 
     100% {
@@ -133,9 +128,9 @@ body {
 .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 15px 40px;
+    padding: 1.5rem 4rem;
     display: inline-block;
-    border-radius: 100px;
+    border-radius: 10rem;
     transition: all .2s;
     position: relative;
 }
