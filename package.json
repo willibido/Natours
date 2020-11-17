@@ -1,0 +1,11 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Advanced css course",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass css/scss/main.scss:css/output/style.css --watch"
+  },
+  "author": "willicoder",
+  "license": "ISC"
+}
